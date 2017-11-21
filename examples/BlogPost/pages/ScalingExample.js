@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
+import { scale, moderateScale, verticalScale } from 'react-native-size-matters';
 import { loremIpsum } from './contants';
 const { width, height } = Dimensions.get('window');
 
@@ -18,10 +19,6 @@ const ScalingExample = () =>
             </View>
         </View>
     </View>;
-
-export default ScalingExample;
-
-import { scale, moderateScale, verticalScale} from './scaling';
 
 const styles = StyleSheet.create({
     container: {
@@ -76,3 +73,5 @@ const styles = StyleSheet.create({
         color: 'white'
     }
 });
+
+export default ScalingExample;
