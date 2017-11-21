@@ -1,6 +1,6 @@
-<h1>Size matters: how I used React Native to make my app look great on every device</h1>
+<h1>Size Matters</h1> 
+<h2>How I used React Native to make my app look great on every device</h2>
 
-*Every example on this post can be found [here](https://github.com/Nirsky/react-native-scaling-example).*
 
 Have you ever had your designer hand you a cool design for your React Native app that you developed on, say, an iPhone 7 - and when you try to run it on a tablet, 
 it looks like it was left in the dryer for too long? 
@@ -20,31 +20,8 @@ To do this, I created a small example app, and after every scaling method I'll a
 
 <h3>How it looks without scaling</h3>
 
-So this is the component:
-```javascript
-import React from 'react';
-import { View, Text, Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
-import { loremIpsum } from './contants';
-const { width, height } = Dimensions.get('window');
-
-const AwesomeComponent = () =>
-    <View style={styles.container}>
-        <View style={styles.box}>
-            <Text style={styles.title}>Awesome Blog Post Page</Text>
-            <Text style={styles.text}>{loremIpsum}</Text>
-            <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText}>Accept</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText}>Decline</Text>
-                </TouchableOpacity>
-            </View>
-        </View>
-    </View>;
-
-export default AwesomeComponent;
-```
+So this is the component:  
+<script src="https://gist.github.com/nirsky/4e343b76d646e4c59d5aeaab4c67bad5.js"></script>
 
 And this is the StyleSheet:
 ```javascript
@@ -240,7 +217,8 @@ But as I said, I'm lazy and I don't want to write everything 2 or more times, wh
 
 
 <h3>Method 3: Scaling Utils</h3>
- Here at Soluto, we wrote these 3 simple functions that make our scaling so much easier:
+ Here at Soluto, we wrote these 3 simple functions that make our scaling so much easier:   
+
   ```javascript
 import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
