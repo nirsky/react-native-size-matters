@@ -20,8 +20,31 @@ To do this, I created a small example app, and after every scaling method I'll a
 
 <h3>How it looks without scaling</h3>
 
-So this is the component:  
-<script src="https://gist.github.com/nirsky/4e343b76d646e4c59d5aeaab4c67bad5.js"></script>
+So this is the component:
+```javascript
+import React from 'react';
+import { View, Text, Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
+import { loremIpsum } from './contants';
+const { width, height } = Dimensions.get('window');
+
+const AwesomeComponent = () =>
+    <View style={styles.container}>
+        <View style={styles.box}>
+            <Text style={styles.title}>Awesome Blog Post Page</Text>
+            <Text style={styles.text}>{loremIpsum}</Text>
+            <View style={styles.buttonsContainer}>
+                <TouchableOpacity style={styles.button}>
+                    <Text style={styles.buttonText}>Accept</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.button}>
+                    <Text style={styles.buttonText}>Decline</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
+    </View>;
+
+export default AwesomeComponent;
+```
 
 And this is the StyleSheet:
 ```javascript
@@ -218,7 +241,7 @@ But as I said, I'm lazy and I don't want to write everything 2 or more times, wh
 
 <h3>Method 3: Scaling Utils</h3>
  Here at Soluto, we wrote these 3 simple functions that make our scaling so much easier:   
-
+ 
   ```javascript
 import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
