@@ -1,5 +1,5 @@
 {
-  "name": "rn-size-matters",
+  "name": "react-native-size-matters",
   "version": "0.0.1",
   "description": "A React-Native utility belt for scaling the size your apps UI across different sized devices",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nirsky/rn-size-matters.git"
+    "url": "git+https://github.com/nirsky/react-native-size-matters.git"
   },
   "keywords": [
     "javascript",
@@ -18,10 +18,10 @@
   "author": "nirsky",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nirsky/rn-size-matters/issues"
+    "url": "https://github.com/nirsky/react-native-size-matters/issues"
   },
-  "homepage": "https://github.com/nirsky/rn-size-matters#readme",
+  "homepage": "https://github.com/nirsky/react-native-size-matters#readme",
   "peerDependencies": {
-    "react-native": "^0.50.3"
+    "react-native": "*"
   }
 }
