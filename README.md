@@ -45,7 +45,7 @@ If normal scale will increase your size by +2X, moderateScale will only increase
 ```js
 import { ScaledSheet } from 'react-native-size-matters';
 
-const styles = ScaleSheet.create(stylesObject)
+const styles = ScaledSheet.create(stylesObject)
 ```
 
 ScaleSheet will take the same stylesObject a regular StyleSheet will take, plus a special (optional) annotation that will automatically apply the scale functions for you:

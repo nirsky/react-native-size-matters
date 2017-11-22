@@ -3,3 +3,4 @@ node_modules
 .npmignore 
 yarn.lock
 README.md
+.idea
