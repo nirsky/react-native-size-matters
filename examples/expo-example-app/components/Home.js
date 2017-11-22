@@ -71,9 +71,6 @@ const Home = ({ navigation, scale }) => {
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Feed')}>
             <Text style={styles.text}>Feed Example</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Form')}>
-            <Text style={styles.text}>Form Example</Text>
-        </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Chat')}>
             <Text style={styles.text}>Chat Example</Text>
         </TouchableOpacity>

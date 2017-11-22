@@ -3,7 +3,6 @@ import {StackNavigator} from 'react-navigation';
 import HomeScreen from './components/Home';
 import FeedPage from './components/Feed';
 import ChatPage from './components/Chat';
-import FormPage from './components/Form';
 
 export default StackNavigator({
     Home: {
@@ -23,13 +22,7 @@ export default StackNavigator({
         navigationOptions: {
             title: 'Feed'
         }
-    },
-    Form: {
-        screen: FormPage,
-        navigationOptions: {
-            title: 'Form'
-        }
     }
 }, {
-    initialRouteName: 'Feed'
+    initialRouteName: 'Home'
 });
