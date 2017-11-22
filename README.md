@@ -1,5 +1,5 @@
 # react-native-size-matters
-A React-Native utility belt for scaling your app across different sized devices
+A React-Native utility belt for scaling the size your apps UI across different sized devices.
 
 ## Installation
 ```js
@@ -42,6 +42,50 @@ If normal scale will increase your size by +2X, moderateScale will only increase
 ➡️ moderateScale(10, 0.1) = 11  
 
 ### ScaledSheet
+```js
+import { ScaledSheet } from 'react-native-size-matters';
 
+const styles = ScaleSheet.create(stylesObject)
+```
+
+ScaleSheet will take the same stylesObject a regular StyleSheet will take, plus a special (optional) annotation that will automatically apply the scale functions for you:
+* `<size>@s` - will apply `scale` function on `size`.
+* `<size>@vs` - will apply `verticalScale` function on `size`.
+* `<size>@ms` - will apply `moderateScale` function with resize factor of 0.5 on `size`.
+* `<size>@ms<factor>` - will apply `moderateScale` function with resize factor of `factor` on size.
+
+Example:
+```js
+import { ScaledSheet } from 'react-native-size-matters';
+
+const styles = ScaledSheet.create({
+    container: {
+        width: '100@s',
+        height: '200@vs',
+        margin: 5
+    },
+    row: {
+        padding: '10@ms0.3',
+        height: '50@ms'
+    }
+});
+```
+is equivalent to:
+```js
+import { StyleSheet } from 'react-native';
+import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
+
+const styles = StyleSheet.create({
+    container: {
+        width: scale(100),
+        height: verticalScale(200),
+        margin: 5
+    },
+    row: {
+        padding: moderateScale(10, 0.3),
+        height: moderateScale(50)
+    }
+});
+```
 
 ## Examples
