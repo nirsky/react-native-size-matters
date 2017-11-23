@@ -8,3 +8,4 @@ __mocks__
 __tests__
 .babelrc
 .travis.yml
+coverage
