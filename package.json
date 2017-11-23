@@ -16,7 +16,7 @@
     "scaling"
   ],
   "author": "nirsky",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nirsky/react-native-size-matters/issues"
   },
