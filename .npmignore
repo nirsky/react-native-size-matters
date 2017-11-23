@@ -4,3 +4,7 @@ node_modules
 yarn.lock
 README.md
 .idea
+__mocks__
+__tests__
+.babelrc
+.travis.yml

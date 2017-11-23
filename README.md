@@ -1,4 +1,6 @@
 # react-native-size-matters
+[![Build Status](https://travis-ci.org/nirsky/react-native-size-matters.svg)](https://travis-ci.org/nirsky/react-native-size-matters)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 A React-Native utility belt for scaling the size your apps UI across different sized devices.
 
 ## Installation
@@ -89,3 +91,6 @@ const styles = StyleSheet.create({
 ```
 
 ## Examples
+You can clone the [expo-example-app](./examples/expo-example-app) from this repo, run `npm install` and `npm start` and scan the presented QR code in the [Expo app](https://expo.io) on your preferred device.
+The app has a on/off switch for using `react-native-size-matters`, and expected to look good on every device you want - iOS or Android, phone or tablet, basically anything (please let me know if not).
+There are also some attached screenshots in the repo if you don't feel like cloning.
