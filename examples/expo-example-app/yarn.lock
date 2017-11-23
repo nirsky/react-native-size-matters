@@ -4490,9 +4490,9 @@ react-native-scripts@1.7.0:
     rimraf "^2.6.1"
     xdl "46.0.1"
 
-react-native-size-matters@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-size-matters/-/react-native-size-matters-0.0.2.tgz#b498ff4b123db271c9015253445f626e07d24897"
+react-native-size-matters@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-size-matters/-/react-native-size-matters-0.0.3.tgz#cc5d64c36d4d3073f80a8bf6fd0b11f9e56aa828"
 
 react-native-svg@5.4.2:
   version "5.4.2"
