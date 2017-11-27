@@ -28,45 +28,45 @@ These are just examples, the scaling will work on any device and any OS.
 
 <p align="center">
     <a href="./screenshots/iphone6_1.PNG">
-        <img src="./screenshots/iphone6_1.PNG" width="200"/>
+        <img src="./screenshots/iphone6_1.PNG" width="250"/>
     </a>
     <a href="./screenshots/iphone6_2.PNG">
-        <img src="./screenshots/iphone6_2.PNG" width="200"/>
+        <img src="./screenshots/iphone6_2.PNG" width="250"/>
     </a>
     <a href="./screenshots/iphone6_3.PNG">
-        <img src="./screenshots/iphone6_3.PNG" width="200"/>
+        <img src="./screenshots/iphone6_3.PNG" width="250"/>
     </a>
     <a href="./screenshots/iphone6_4.PNG">
-        <img src="./screenshots/iphone6_4.PNG" width="200"/>
+        <img src="./screenshots/iphone6_4.PNG" width="250"/>
     </a>
     <a href="./screenshots/iphone6_5.PNG">
-        <img src="./screenshots/iphone6_5.PNG" width="200"/>
+        <img src="./screenshots/iphone6_5.PNG" width="250"/>
     </a>
     <a href="./screenshots/iphone6_6.PNG">
-        <img src="./screenshots/iphone6_6.PNG" width="200"/>
+        <img src="./screenshots/iphone6_6.PNG" width="250"/>
     </a>
 </p>
 
 ### iPhone X
 
 <p align="center">
-    <a href="./screenshots/iphoneX_1.PNG">
-        <img src="./screenshots/iphoneX_1.PNG" width="200"/>
+    <a href="./screenshots/iphoneX_1.png">
+        <img src="./screenshots/iphoneX_1.png" width="250"/>
     </a>
-    <a href="./screenshots/iphoneX_2.PNG">
-        <img src="./screenshots/iphoneX_2.PNG" width="200"/>
+    <a href="./screenshots/iphoneX_2.png">
+        <img src="./screenshots/iphoneX_2.png" width="250"/>
     </a>
-    <a href="./screenshots/iphoneX_3.PNG">
-        <img src="./screenshots/iphoneX_3.PNG" width="200"/>
+    <a href="./screenshots/iphoneX_3.png">
+        <img src="./screenshots/iphoneX_3.png" width="250"/>
     </a>
-    <a href="./screenshots/iphoneX_4.PNG">
-        <img src="./screenshots/iphoneX_4.PNG" width="200"/>
+    <a href="./screenshots/iphoneX_4.png">
+        <img src="./screenshots/iphoneX_4.png" width="250"/>
     </a>
-    <a href="./screenshots/iphoneX_5.PNG">
-        <img src="./screenshots/iphoneX_5.PNG" width="200"/>
+    <a href="./screenshots/iphoneX_5.png">
+        <img src="./screenshots/iphoneX_5.png" width="250"/>
     </a>
-    <a href="./screenshots/iphoneX_6.PNG">
-        <img src="./screenshots/iphoneX_6.PNG" width="200"/>
+    <a href="./screenshots/iphoneX_6.png">
+        <img src="./screenshots/iphoneX_6.png" width="250"/>
     </a>
 </p>
 
@@ -74,21 +74,21 @@ These are just examples, the scaling will work on any device and any OS.
 
 <p align="center">
     <a href="./screenshots/ipad129_1.PNG">
-        <img src="./screenshots/ipad129_1.PNG" width="200"/>
+        <img src="./screenshots/ipad129_1.PNG" width="250"/>
     </a>
     <a href="./screenshots/ipad129_2.PNG">
-        <img src="./screenshots/ipad129_2.PNG" width="200"/>
+        <img src="./screenshots/ipad129_2.PNG" width="250"/>
     </a>
     <a href="./screenshots/ipad129_3.PNG">
-        <img src="./screenshots/ipad129_3.PNG" width="200"/>
+        <img src="./screenshots/ipad129_3.PNG" width="250"/>
     </a>
     <a href="./screenshots/ipad129_4.PNG">
-        <img src="./screenshots/ipad129_4.PNG" width="200"/>
+        <img src="./screenshots/ipad129_4.PNG" width="250"/>
     </a>
     <a href="./screenshots/ipad129_5.PNG">
-        <img src="./screenshots/ipad129_5.PNG" width="200"/>
+        <img src="./screenshots/ipad129_5.PNG" width="250"/>
     </a>
     <a href="./screenshots/ipad129_6.PNG">
-        <img src="./screenshots/ipad129_6.PNG" width="200"/>
+        <img src="./screenshots/ipad129_6.PNG" width="250"/>
     </a>
 </p>
