@@ -93,5 +93,6 @@ const styles = StyleSheet.create({
 
 ## Examples
 You can clone the [expo-example-app](./examples/expo-example-app) from this repo, run `npm install` and `npm start` and scan the presented QR code in the [Expo app](https://expo.io) on your preferred device.  
-The app has a on/off switch for using `react-native-size-matters`, and expected to look good on every device you want - iOS or Android, phone or tablet, basically anything (please let me know if not).  
+The app has a on/off switch for using `react-native-size-matters`, so you can test yourself how the app will look with and without scaling.   
+It is expected to look good on every device you want - iOS or Android, phone or tablet, basically anything (please let me know if not).  
 There are also some attached screenshots in the repo if you don't feel like cloning.

@@ -9,4 +9,3 @@ __tests__
 .babelrc
 .travis.yml
 coverage
-LICENSE

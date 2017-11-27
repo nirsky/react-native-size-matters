@@ -20,4 +20,75 @@ Like `npm start`, but also attempts to open your app on a connected Android devi
 
 ## Screenshots
 
-Coming soon!
+The app has 3 scenes, each scene has a switch to enable/disable the usage of `react-native-size-matters`.  
+Below are attached screenshot of the different scenes on different device, with the switch both on and off.  
+These are just examples, the scaling will work on any device and any OS.  
+
+### iPhone 6
+
+<p align="center">
+    <a href="./screenshots/iphone6_1.PNG">
+        <img src="./screenshots/iphone6_1.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphone6_2.PNG">
+        <img src="./screenshots/iphone6_2.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphone6_3.PNG">
+        <img src="./screenshots/iphone6_3.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphone6_4.PNG">
+        <img src="./screenshots/iphone6_4.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphone6_5.PNG">
+        <img src="./screenshots/iphone6_5.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphone6_6.PNG">
+        <img src="./screenshots/iphone6_6.PNG" width="200"/>
+    </a>
+</p>
+
+### iPhone X
+
+<p align="center">
+    <a href="./screenshots/iphoneX_1.PNG">
+        <img src="./screenshots/iphoneX_1.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphoneX_2.PNG">
+        <img src="./screenshots/iphoneX_2.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphoneX_3.PNG">
+        <img src="./screenshots/iphoneX_3.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphoneX_4.PNG">
+        <img src="./screenshots/iphoneX_4.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphoneX_5.PNG">
+        <img src="./screenshots/iphoneX_5.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/iphoneX_6.PNG">
+        <img src="./screenshots/iphoneX_6.PNG" width="200"/>
+    </a>
+</p>
+
+### iPad Pro 12.9"
+
+<p align="center">
+    <a href="./screenshots/ipad129_1.PNG">
+        <img src="./screenshots/ipad129_1.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/ipad129_2.PNG">
+        <img src="./screenshots/ipad129_2.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/ipad129_3.PNG">
+        <img src="./screenshots/ipad129_3.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/ipad129_4.PNG">
+        <img src="./screenshots/ipad129_4.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/ipad129_5.PNG">
+        <img src="./screenshots/ipad129_5.PNG" width="200"/>
+    </a>
+    <a href="./screenshots/ipad129_6.PNG">
+        <img src="./screenshots/ipad129_6.PNG" width="200"/>
+    </a>
+</p>
