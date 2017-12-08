@@ -1,9 +1,16 @@
 # react-native-size-matters
 [![Build Status](https://travis-ci.org/nirsky/react-native-size-matters.svg)](https://travis-ci.org/nirsky/react-native-size-matters)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![NPM version](https://img.shields.io/npm/v/react-native-size-matters.svg)](https://www.npmjs.com/package/react-native-size-matters)
-[![Dependency Status](https://www.versioneye.com/user/projects/5a1c3a780fb24f1a7ff41e77/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a1c3a780fb24f1a7ff41e77)     
+[![Dependency Status](https://www.versioneye.com/user/projects/5a1c3a780fb24f1a7ff41e77/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a1c3a780fb24f1a7ff41e77)
+[![NPM version](https://img.shields.io/npm/v/react-native-size-matters.svg)](https://www.npmjs.com/package/react-native-size-matters)   
+
 A React-Native utility belt for scaling the size your apps UI across different sized devices.
+
+<p align="center">
+    <a href="./examples/ipad_gif.gif">
+        <img src="./examples/ipad_gif.gif" width="250"/>
+    </a>
+</p>
 
 ## Installation
 ```js
