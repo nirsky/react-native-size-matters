@@ -69,30 +69,13 @@ import { ScaledSheet } from 'react-native-size-matters';
 
 const styles = ScaledSheet.create({
     container: {
-        width: '100@s',
-        height: '200@vs',
+        width: '100@s', // = scale(100)
+        height: '200@vs', // = verticalScale(200)
         margin: 5
     },
     row: {
-        padding: '10@ms0.3',
-        height: '50@ms'
-    }
-});
-```
-is equivalent to:
-```js
-import { StyleSheet } from 'react-native';
-import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
-
-const styles = StyleSheet.create({
-    container: {
-        width: scale(100),
-        height: verticalScale(200),
-        margin: 5
-    },
-    row: {
-        padding: moderateScale(10, 0.3),
-        height: moderateScale(50)
+        padding: '10@ms0.3', // = moderateScale(10, 0.3)
+        height: '50@ms' // = moderateScale(50)
     }
 });
 ```
