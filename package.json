@@ -29,5 +29,8 @@
     "babel-jest": "^21.2.0",
     "babel-preset-es2015": "^6.24.1",
     "jest": "^21.2.1"
+  },
+  "dependencies": {
+    "react-native-config": "^0.11.5"
   }
 }
