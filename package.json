@@ -31,6 +31,7 @@
     "jest": "^21.2.1"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "react-native-config": "^0.11.5"
   }
 }
