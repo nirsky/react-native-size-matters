@@ -6,7 +6,7 @@
 A React-Native utility belt for scaling the size your apps UI across different sized devices.
 
 <a href="./examples/ipad.gif">
-    <img src="./examples/ipad.gif" width="250"/>
+    <img src="./examples/ipad.gif" width="320"/>
 </a>
 
 ## Installation
