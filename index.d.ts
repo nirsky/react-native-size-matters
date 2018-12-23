@@ -1,4 +1,4 @@
-import * as ReactNative from "react-native";
+import * as RN from "react-native";
 
 declare module "react-native-size-matters" {
 
@@ -32,9 +32,9 @@ declare module "react-native-size-matters" {
     export function verticalScale(size: number): number;
     export function moderateScale(size: number, factor?: number): number;
 
-    type NamedStyles<T> = { [P in keyof T]: ReactNative.ViewStyle | ReactNative.TextStyle | ReactNative.ImageStyle | StringifiedStyles };
+    type NamedStyles<T> = { [P in keyof T]: RN.ViewStyle | RN.TextStyle | RN.ImageStyle | StringifiedStyles };
 
     export namespace ScaledSheet {
-        export function create<T extends NamedStyles<T>>(stylesObject: T): { [P in keyof T]: ReactNative.RegisteredStyle<T[P]> };
+        export function create<T extends NamedStyles<T> | NamedStyles<any>>(stylesObject: T): { [P in keyof T]: RN.RegisteredStyle<T[P]> };
     }
 }
