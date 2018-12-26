@@ -7,8 +7,6 @@ declare module "react-native-size-matters" {
         letterSpacing?: string | number;
         lineHeight?: string | number;
         textShadowRadius?: string | number;
-        textShadowOffset?: { width: number | string; height: number | string; };
-        shadowOffset?: { width: number | string; height: number | string; };
         borderBottomLeftRadius?: string | number;
         borderBottomRightRadius?: string | number;
         borderTopLeftRadius?: string | number;
@@ -35,6 +33,8 @@ declare module "react-native-size-matters" {
     type NamedStyles<T> = { [P in keyof T]: RN.ViewStyle | RN.TextStyle | RN.ImageStyle | StringifiedStyles };
 
     export namespace ScaledSheet {
-        export function create<T extends NamedStyles<T> | NamedStyles<any>>(stylesObject: T): { [P in keyof T]: RN.RegisteredStyle<T[P]> };
+        export function create<T extends NamedStyles<T> | NamedStyles<any>>(stylesObject: T): { 
+            [P in keyof T]: RN.RegisteredStyle<T[P] & Record<Extract<keyof T[P], keyof StringifiedStyles>, number>> 
+        };
     }
 }
