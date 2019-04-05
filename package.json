@@ -1,10 +1,11 @@
 {
   "name": "react-native-size-matters",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A React-Native utility belt for scaling the size your apps UI across different sized devices",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,10 @@
     "react-native": "*"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-jest": "^21.2.0",
-    "babel-preset-es2015": "^6.24.1",
-    "jest": "^21.2.1",
-    "jest-cli": "^23.1.0"
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-jest": "^24.6.0",
+    "jest": "^24.6.1",
+    "jest-cli": "^24.6.0"
   }
 }
