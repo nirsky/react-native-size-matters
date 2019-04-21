@@ -1,4 +1,5 @@
 jest.mock('react-native');
+jest.unmock('react-native-dotenv');
 import { scale, verticalScale, moderateScale } from '../lib/scaling-utils';
 
 describe('scaling-utils', () => {
