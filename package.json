@@ -1,6 +1,6 @@
 {
   "name": "react-native-size-matters",
-  "version": "0.1.6-beta.1",
+  "version": "0.1.6-beta.7",
   "description": "A React-Native utility belt for scaling the size your apps UI across different sized devices",
   "main": "index.js",
   "scripts": {
@@ -22,9 +22,6 @@
     "url": "https://github.com/nirsky/react-native-size-matters/issues"
   },
   "homepage": "https://github.com/nirsky/react-native-size-matters#readme",
-  "dependencies": {
-    "react-native-dotenv": "^0.2.x"
-  },
   "peerDependencies": {
     "react-native": "*"
   },

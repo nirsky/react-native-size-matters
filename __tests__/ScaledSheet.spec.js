@@ -1,7 +1,5 @@
 jest.mock('react-native');
-jest.unmock('react-native-dotenv');
-import { scale, verticalScale, moderateScale } from '../lib/scaling-utils';
-import ScaledSheet from '../lib/ScaledSheet';
+import { ScaledSheet, scale, verticalScale, moderateScale } from '..';
 
 const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
 

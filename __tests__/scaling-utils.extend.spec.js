@@ -1,6 +1,6 @@
 jest.mock('react-native');
 jest.mock('react-native-dotenv');
-import { scale, verticalScale, moderateScale } from '../lib/scaling-utils';
+import { scale, verticalScale, moderateScale } from '../extend';
 
 describe('scaling-utils when guideline sizes are set using react-native-dotenv', () => {
     test('scale returns the expected result based on mocked Dimensions and mocked guideline sizes', () => {
