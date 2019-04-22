@@ -92,7 +92,7 @@ SIZE_MATTERS_BASE_HEIGHT=<custom-height>
 ```
 Next and final step, you should change all your imports to `react-native-size-matters/extend`, for instance:
 ```javascript
-import { ScaledSheet, moderateScale } from `react-native-size-matters/extend`;
+import { ScaledSheet, moderateScale } from 'react-native-size-matters/extend';
 ```
 
 ## Examples
