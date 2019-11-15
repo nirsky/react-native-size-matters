@@ -49,6 +49,12 @@ If normal scale will increase your size by +2X, moderateScale will only increase
 ➡️ moderateScale(10) = 15  
 ➡️ moderateScale(10, 0.1) = 11  
 
+All scale functions can be imported using their shorthand alias as well:
+```js
+import { s, vs, ms } from 'react-native-size-matters';
+```
+
+
 ### ScaledSheet
 ```js
 import { ScaledSheet } from 'react-native-size-matters';
@@ -62,6 +68,8 @@ ScaleSheet will take the same stylesObject a regular StyleSheet will take, plus 
 * `<size>@ms` - will apply `moderateScale` function with resize factor of 0.5 on `size`.
 * `<size>@ms<factor>` - will apply `moderateScale` function with resize factor of `factor` on size.
 
+ScaledSheet also supports rounding the result, simply add `r` at the end on of the annotation. 
+
 Example:
 ```js
 import { ScaledSheet } from 'react-native-size-matters';
@@ -70,6 +78,7 @@ const styles = ScaledSheet.create({
     container: {
         width: '100@s', // = scale(100)
         height: '200@vs', // = verticalScale(200)
+        padding: '2@msr', // = Math.round(moderateScale(2))
         margin: 5
     },
     row: {

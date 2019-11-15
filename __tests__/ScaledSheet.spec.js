@@ -68,7 +68,14 @@ describe('ScaledSheet', () => {
                 height: '34@ms',
                 marginRight: '0.5@ms0.9',
                 marginLeft: '-0.5@ms0.9',
+                marginBottom: '0.532@ms0.9',
                 marginTop: '-10@s',
+            },
+            round: {
+                top: '11.3@sr',
+                bottom: '22.75@vsr',
+                left: '35.1@msr',
+                right: '-20.19@ms0.3r'
             }
         };
 
@@ -87,7 +94,14 @@ describe('ScaledSheet', () => {
                 height: moderateScale(34),
                 marginRight: moderateScale(0.5, 0.9),
                 marginLeft: moderateScale(-0.5, 0.9),
+                marginBottom: moderateScale(0.532, 0.9),
                 marginTop: scale(-10),
+            },
+            round: {
+                top: Math.round(scale(11.3)),
+                bottom: Math.round(verticalScale(22.75)),
+                left: Math.round(moderateScale(35.1)),
+                right: Math.round(moderateScale(-20.19, 0.3))
             }
         };
 
