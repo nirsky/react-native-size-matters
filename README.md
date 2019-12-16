@@ -20,7 +20,7 @@ yarn add react-native-size-matters
 When developing with react-native, you need to manually adjust your app to look great on a variety of different screen sizes. That's a tedious job.  
 react-native-size-matters provides some simple tooling to make your scaling a whole lot easier.  
 The idea is to develop once on a standard ~5" screen mobile device and then simply apply the provided utils.  
-📖 You can read more about what led to this library on my blog post, which can be found in [this repo](./examples/BlogPost) or at [Soluto Engineering Blog](https://blog.solutotlv.com/size-matters/).
+📖 You can read more about what led to this library on my blog post, which can be found in [this repo](./examples/BlogPost) or at [Medium](https://medium.com/soluto-engineering/size-matters-5aeeb462900a).
 
 ## Api
 ### Scaling Functions
@@ -68,7 +68,7 @@ ScaleSheet will take the same stylesObject a regular StyleSheet will take, plus 
 * `<size>@ms` - will apply `moderateScale` function with resize factor of 0.5 on `size`.
 * `<size>@ms<factor>` - will apply `moderateScale` function with resize factor of `factor` on size.
 
-ScaledSheet also supports rounding the result, simply add `r` at the end on of the annotation. 
+ScaledSheet also supports rounding the result, simply add `r` at the end of the annotation. 
 
 Example:
 ```js
