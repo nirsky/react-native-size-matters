@@ -23,4 +23,17 @@ describe('scaling-utils when guideline sizes are set using react-native-dotenv',
         expect(Math.floor(moderateScale(100, 0.9))).toBe(129);
         expect(Math.floor(moderateScale(100, 2))).toBe(166);
     });
+
+    test('each scale returns the same value when scaling is disabled', () => {
+        jest.resetModules();
+        jest.mock('react-native');
+        jest.mock('react-native-dotenv', () => ({
+            SIZE_MATTERS_DISABLED_DEVICES: 'TABLET'
+        }));
+        const { scale, verticalScale, moderateScale } = require('../extend');
+
+        expect(Math.floor(scale(2.5))).toBe(2);
+        expect(Math.floor(verticalScale(5))).toBe(5);
+        expect(Math.floor(moderateScale(100))).toBe(100);
+    });
 })
