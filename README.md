@@ -93,11 +93,16 @@ const styles = ScaledSheet.create({
 In the ever-changing mobile devices world, screen sizes change a lot.  
 This lib uses 350dp x 680dp as guideline sizes, but if you (or your designer) prefer using different sizes it's possible.
 
+Also, you can disable scaling utility based on device type and orientation. Possible options: 
+
+`PHONE`, `PHONE_PORTRAIT`, `PHONE_LANDSCAPE`, `TABLET`, `TABLET_PORTRAIT`, `TABLET_LANDSCAPE`, `PORTRAIT`, and `LANDSCAPE`.
+
 To do so, first, you'd need to setup [react-native-dotenv](https://github.com/zetachang/react-native-dotenv).  
 After setting it up and creating `.env` file, add the following env params to it:
 ```env
 SIZE_MATTERS_BASE_WIDTH=<custom-width>
 SIZE_MATTERS_BASE_HEIGHT=<custom-height>
+SIZE_MATTERS_DISABLED_DEVICES=<device-types-list> # i.e. PHONE_PORTRAIT|TABLET_LANDSCAPE
 ```
 Next and final step, you should change all your imports to `react-native-size-matters/extend`, for instance:
 ```javascript
