@@ -89,24 +89,8 @@ const styles = ScaledSheet.create({
 });
 ```
 
-## Changing the Default Guideline Sizes
+<hr/>
 
-In the ever-changing mobile devices world, screen sizes change a lot.  
-This lib uses 350dp x 680dp as guideline sizes, but if you (or your designer) prefer using different sizes it's possible.
+* [Changing the Default Guideline Sizes](./examples/change-guideline-sizes.md)
+* [Examples](./examples/README.md) 
 
-To do so, first, you'd need to setup [react-native-dotenv](https://github.com/zetachang/react-native-dotenv).  
-After setting it up and creating `.env` file, add the following env params to it:
-```env
-SIZE_MATTERS_BASE_WIDTH=<custom-width>
-SIZE_MATTERS_BASE_HEIGHT=<custom-height>
-```
-Next and final step, you should change all your imports to `react-native-size-matters/extend`, for instance:
-```javascript
-import { ScaledSheet, moderateScale } from 'react-native-size-matters/extend';
-```
-
-## Examples
-You can clone the [expo-example-app](./examples/expo-example-app) from this repo, run `npm install` and `npm start` and scan the presented QR code in the [Expo app](https://expo.io) on your preferred device.  
-The app has an on/off switch for using `react-native-size-matters`, so you can test yourself how the app will look with and without scaling.   
-It is expected to look good on every device you want - iOS or Android, phone or tablet, basically anything (please let me know if not).  
-There are also some attached screenshots in the repo if you don't feel like cloning.
