@@ -92,3 +92,17 @@ These are just examples, the scaling will work on any device and any OS.
         <img src="./screenshots/ipad129_6.PNG" width="250"/>
     </a>
 </p>
+
+## Side-by-Side Screenshots
+
+### Without Size Matters 
+| Screen | iPhone 6 | iPhone x | iPad Pro 12.9" |
+| --- | --- | --- | --- | 
+| Feed | <img src="./screenshots/iphone6_3.PNG" height="350"/> | <img src="./screenshots/iphoneX_3.png" height="350"/> | <img src="./screenshots/ipad129_3.PNG" height="350"/> |
+| Chat | <img src="./screenshots/iphone6_5.PNG" height="350"/> | <img src="./screenshots/iphoneX_5.png" height="350"/> | <img src="./screenshots/ipad129_5.PNG" height="350"/> |
+
+### With Size Matters 
+| Screen | iPhone 6 | iPhone x | iPad Pro 12.9" |
+| --- | --- | --- | --- | 
+| Feed | <img src="./screenshots/iphone6_4.PNG" height="350"/> | <img src="./screenshots/iphoneX_4.png" height="350"/> | <img src="./screenshots/ipad129_4.PNG" height="350"/> |
+| Chat | <img src="./screenshots/iphone6_6.PNG" height="350"/> | <img src="./screenshots/iphoneX_6.png" height="350"/> | <img src="./screenshots/ipad129_6.PNG" height="350"/> |
