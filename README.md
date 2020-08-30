@@ -24,7 +24,9 @@ The idea is to develop once on a standard ~5" screen mobile device and then simp
 📖 You can read more about what led to this library on my blog post, which can be found in [this repo](./examples/BlogPost) or at [Medium](https://medium.com/soluto-engineering/size-matters-5aeeb462900a).
 
 ## Api
+
 ### Scaling Functions
+
 ```js
 import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 
@@ -38,12 +40,15 @@ const Component = props =>
 
 
 * `scale(size: number)`
+
 Will return a linear scaled result of the provided size, based on your device's screen width.
 
 * `verticalScale(size: number)`
+
 Will return a linear scaled result of the provided size, based on your device's screen height.
 
 * `moderateScale(size: number, factor?: number)`
+
 Sometimes you don't want to scale everything in a linear manner, that's where moderateScale comes in.
 The cool thing about it is that you can control the resize factor (default is 0.5).
 If normal scale will increase your size by +2X, moderateScale will only increase it by +X, for example:
@@ -52,6 +57,7 @@ If normal scale will increase your size by +2X, moderateScale will only increase
 ➡️ moderateScale(10, 0.1) = 11
 
 * `moderateVerticalScale(size: number, factor?: number)`
+
 Same as moderateScale, but using verticalScale instead of scale.
 
 All scale functions can be imported using their shorthand alias as well:
@@ -93,7 +99,7 @@ const styles = ScaledSheet.create({
         height: '50@ms' // = moderateScale(50)
     },
     titleBar: {
-      paddingBottom: '30@mvs0.3',
+      paddingBottom: '30@mvs0.3', // = moderateVerticalScale(30, 0.3)
       height: '30@mvs'
     }
 });
