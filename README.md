@@ -52,7 +52,7 @@ If normal scale will increase your size by +2X, moderateScale will only increase
 ➡️ moderateScale(10, 0.1) = 11
 
 * `moderateVerticalScale(size: number, factor?: number)`
-Same as moderateScale but using verticalScale() instead of scale()
+Same as moderateScale, but using verticalScale instead of scale.
 
 All scale functions can be imported using their shorthand alias as well:
 ```js
@@ -103,4 +103,3 @@ const styles = ScaledSheet.create({
 
 * [Changing the Default Guideline Sizes](./examples/change-guideline-sizes.md)
 * [Examples](./examples/README.md)
-
