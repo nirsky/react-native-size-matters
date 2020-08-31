@@ -24,9 +24,7 @@ The idea is to develop once on a standard ~5" screen mobile device and then simp
 📖 You can read more about what led to this library on my blog post, which can be found in [this repo](./examples/BlogPost) or at [Medium](https://medium.com/soluto-engineering/size-matters-5aeeb462900a).
 
 ## Api
-
 ### Scaling Functions
-
 ```js
 import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 
