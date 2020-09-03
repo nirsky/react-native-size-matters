@@ -29,15 +29,17 @@ declare module "react-native-size-matters" {
     export function scale(size: number): number;
     export function verticalScale(size: number): number;
     export function moderateScale(size: number, factor?: number): number;
+    export function moderateVerticalScale(size: number, factor?: number): number;
     export function s(size: number): number;
     export function vs(size: number): number;
     export function ms(size: number, factor?: number): number;
+    export function mvs(size: number, factor?: number): number;
 
     type NamedStyles<T> = { [P in keyof T]: RN.ViewStyle | RN.TextStyle | RN.ImageStyle | StringifiedStyles };
 
     export namespace ScaledSheet {
-        export function create<T extends NamedStyles<T> | NamedStyles<any>>(stylesObject: T): { 
-            [P in keyof T]: RN.RegisteredStyle<T[P] & Record<Extract<keyof T[P], keyof StringifiedStyles>, number>> 
+        export function create<T extends NamedStyles<T> | NamedStyles<any>>(stylesObject: T): {
+            [P in keyof T]: RN.RegisteredStyle<T[P] & Record<Extract<keyof T[P], keyof StringifiedStyles>, number>>
         };
     }
 }

@@ -1,5 +1,5 @@
 jest.mock('react-native');
-import { scale, verticalScale, moderateScale } from '..';
+import { scale, verticalScale, moderateScale, moderateVerticalScale } from '..';
 
 describe('scaling-utils', () => {
     test('scale returns the expected result based on mocked Dimensions', () => {
@@ -22,4 +22,13 @@ describe('scaling-utils', () => {
         expect(moderateScale(100, 0.9)).toBe(190);
         expect(moderateScale(100, 2)).toBe(300);
     });
-})
+
+    test('moderateVerticalScale returns the expected result based on mocked Dimensions', () => {
+        expect(moderateVerticalScale(100)).toBe(125);
+        expect(moderateVerticalScale(100, 0.1)).toBe(105);
+        expect(moderateVerticalScale(100, 0.3)).toBe(115);
+        expect(moderateVerticalScale(100, 0.6)).toBe(130);
+        expect(moderateVerticalScale(100, 0.9)).toBe(145);
+        expect(moderateVerticalScale(100, 2)).toBe(200);
+    });
+});
