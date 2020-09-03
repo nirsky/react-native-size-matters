@@ -8,7 +8,7 @@ It is expected to look good on every device you want - iOS or Android, phone or 
 
 There are also some attached [screenshots](./expo-example-app#screenshots) in the repo if you don't feel like cloning.
 
-<hr/>
+<hr/> 
 
 ### [Blog Post](./BlogPost)  
 ### [Expo Example App](./expo-example-app)
