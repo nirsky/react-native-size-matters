@@ -1,6 +1,6 @@
 {
   "name": "react-native-size-matters",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A React-Native utility belt for scaling the size your apps UI across different sized devices",
   "main": "index.js",
   "scripts": {
