@@ -3,7 +3,7 @@
 In the ever-changing mobile devices world, screen sizes change a lot.  
 This lib uses 350dp x 680dp as guideline sizes, but if you (or your designer) prefer using different sizes it's possible.
 
-To do so, first, you'd need to setup [react-native-dotenv](https://github.com/zetachang/react-native-dotenv).  
+To do so, first, you'd need to setup [babel-plugin-dotenv-import](https://github.com/tusbar/babel-plugin-dotenv-import).  
 After setting it up and creating `.env` file, add the following env params to it:
 ```env
 SIZE_MATTERS_BASE_WIDTH=<custom-width>
