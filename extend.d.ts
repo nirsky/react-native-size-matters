@@ -12,7 +12,7 @@ declare module "react-native-size-matters/extend" {
     export function mvs(size: number, factor?: number): number;
 
     export namespace ScaledSheet {
-        export function create<T extends NamedStyles<T> | NamedStyles<any>>(stylesObject: T): {
+        export function create<T extends NamedStyles<T> | NamedStyles<any>>(stylesObject: T, disableScaling?: boolean): {
             [P in keyof T]: RN.RegisteredStyle<T[P] & Record<Extract<keyof T[P], keyof StringifiedStyles>, number>>
         };
     }
