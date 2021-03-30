@@ -44,7 +44,7 @@ const scaleByAnnotation = (scale, verticalScale, moderateScale, moderateVertical
 const scaledSheetCreator = (scale, verticalScale, moderateScale, moderateVerticalScale) => {
     const scaleFunc = scaleByAnnotation(scale, verticalScale, moderateScale, moderateVerticalScale);
     return {
-        create: styleSheet => StyleSheet.create(deepMap(styleSheet, scaleFunc))
+        create: (styleSheet: StyleSheet) => StyleSheet.create(deepMap(styleSheet, scaleFunc))
     };
 };
 

@@ -1,5 +1,5 @@
-const deepMap = (obj, fn) => {
-    const deepMapper = val => (isObject(val)) ? deepMap(val, fn) : fn(val);
+const deepMap = (obj: any, fn: Function) => {
+    const deepMapper = (val: any) => (isObject(val)) ? deepMap(val, fn) : fn(val);
     if (Array.isArray(obj)) {
         return obj.map(deepMapper);
     }
@@ -9,12 +9,12 @@ const deepMap = (obj, fn) => {
     return obj;
 };
 
-const mapObject = (obj, fn) => Object.keys(obj).reduce(
+const mapObject = (obj: any, fn: Function) => Object.keys(obj).reduce(
     (res, key) => {
         res[key] = fn(obj[key]);
         return res;
     }, {});
 
-const isObject = myVar => myVar && typeof myVar === 'object';
+const isObject = (myVar: any) => myVar && typeof myVar === 'object';
 
 export default deepMap;
