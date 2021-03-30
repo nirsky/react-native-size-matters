@@ -1,35 +1,46 @@
 {
-  "name": "react-native-size-matters",
-  "version": "0.4.0",
-  "description": "A React-Native utility belt for scaling the size your apps UI across different sized devices",
-  "main": "index.js",
-  "scripts": {
-    "test": "ts-jest --coverage",
-    "test:watch": "ts-jest --watch",
-    "build": "tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nirsky/react-native-size-matters.git"
-  },
-  "keywords": [
-    "javascript",
-    "react-native",
-    "scaling"
-  ],
-  "author": "nirsky",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nirsky/react-native-size-matters/issues"
-  },
-  "homepage": "https://github.com/nirsky/react-native-size-matters#readme",
-  "peerDependencies": {
-    "react-native": "*"
-  },
-  "devDependencies": {
-    "@types/react-native": "^0.64.2",
-    "jest": "^26.6.3",
-    "ts-jest": "^26.5.4",
-    "typescript": "^4.2.3"
-  }
+    "name": "react-native-size-matters",
+    "version": "0.4.0-canary-3",
+    "description": "A React-Native utility belt for scaling the size your apps UI across different sized devices",
+    "main": "index.js",
+    "scripts": {
+        "test": "ts-jest --coverage",
+        "test:watch": "ts-jest --watch",
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nirsky/react-native-size-matters.git"
+    },
+    "keywords": [
+        "javascript",
+        "react-native",
+        "scaling"
+    ],
+    "files": [
+        "lib/**/*.js",
+        "lib/**/*.js.map",
+        "lib/**/*.d.ts",
+        "extend.js",
+        "extend.d.ts",
+        "index.js",
+        "index.d.ts",
+        "LICENSE",
+        "README.md"
+    ],
+    "author": "nirsky",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nirsky/react-native-size-matters/issues"
+    },
+    "homepage": "https://github.com/nirsky/react-native-size-matters#readme",
+    "peerDependencies": {
+        "react-native": "*"
+    },
+    "devDependencies": {
+        "@types/react-native": "^0.64.2",
+        "jest": "^26.6.3",
+        "ts-jest": "^26.5.4",
+        "typescript": "^4.2.3"
+    }
 }

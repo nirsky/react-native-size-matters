@@ -1,3 +1,9 @@
 node_modules
 coverage
 settings.json
+extend.js
+index.js
+lib/**/**.js
+lib/**/**.d.ts
+extend.d.ts
+index.d.ts
