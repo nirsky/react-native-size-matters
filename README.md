@@ -47,9 +47,9 @@ Will return a linear scaled result of the provided size, based on your device's 
 Sometimes you don't want to scale everything in a linear manner, that's where moderateScale comes in.  
 The cool thing about it is that you can control the resize factor (default is 0.5).  
 If normal scale will increase your size by +2X, moderateScale will only increase it by +X, for example:  
-➡️&nbsp;scale(10) = 20  
-➡️&nbsp;moderateScale(10) = 15  
-➡️&nbsp;moderateScale(10, 0.1) = 11  
+➡️ &nbsp;&nbsp;scale(10) = 20  
+➡️ &nbsp;&nbsp;moderateScale(10) = 15  
+➡️ &nbsp;&nbsp;moderateScale(10, 0.1) = 11  
 * `moderateVerticalScale(size: number, factor?: number)`  
 Same as moderateScale, but using verticalScale instead of scale.
 
