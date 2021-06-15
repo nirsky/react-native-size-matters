@@ -5,7 +5,7 @@
 [![TypeScript](https://badgen.net/npm/types/env-var)](http://www.typescriptlang.org/)
 
 
-A React-Native utility belt for scaling the size of your apps UI across different sized devices.
+A lightweight, zero-dependencies, React-Native utility belt for scaling the size of your apps UI across different sized devices.
 
 <a href="./examples/ipad.gif">
     <img src="./examples/ipad.gif" width="320"/>
