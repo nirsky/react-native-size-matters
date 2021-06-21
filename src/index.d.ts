@@ -34,8 +34,8 @@ declare module "nirsky-testing-s-matters" {
     export function vs(size: number): number;
     export function ms(size: number, factor?: number): number;
     export function mvs(size: number, factor?: number): number;
-    export function setBaseWidth(width: number): void;
-    export function setBaseHeight(height: number): void;
+    export function setSizeMattersBaseWidth(width: number): void;
+    export function setSizeMattersBaseHeight(height: number): void;
 
     type NamedStyles<T> = { [P in keyof T]: RN.ViewStyle | RN.TextStyle | RN.ImageStyle | StringifiedStyles };
 

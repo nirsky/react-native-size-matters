@@ -2,9 +2,9 @@
   "name": "nirsky-testing-s-matters",
   "version": "0.4.4",
   "description": "A React-Native utility belt for scaling the size your apps UI across different sized devices",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "npx babel lib --out-dir dist && copyfiles -f lib/index.d.ts dist/",
+    "build": "npx babel src --out-dir lib && copyfiles -f src/index.d.ts lib/",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
