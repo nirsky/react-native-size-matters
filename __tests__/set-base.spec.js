@@ -1,8 +1,15 @@
-import { setBaseHeight, setBaseWidth, scale, verticalScale, moderateScale, moderateVerticalScale } from '../lib/scaling-utils';
+import { 
+    setSizeMattersBaseWidth, 
+    setSizeMattersBaseHeight, 
+    scale, 
+    verticalScale, 
+    moderateScale, 
+    moderateVerticalScale 
+} from '../src/scaling-utils';
 
 describe('set base dimensions', () => {
-    setBaseWidth(525);
-    setBaseHeight(1020);
+    setSizeMattersBaseWidth(525);
+    setSizeMattersBaseHeight(1020);
 
     test('scale returns the expected result based on mocked Dimensions and set guideline sizes', () => {
         expect(Math.floor(scale(2.5))).toBe(3);

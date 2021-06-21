@@ -1,5 +1,5 @@
 jest.mock('react-native');
-import { ScaledSheet, scale, verticalScale, moderateScale, moderateVerticalScale } from '..';
+import { ScaledSheet, scale, verticalScale, moderateScale, moderateVerticalScale } from '../src';
 
 const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
 

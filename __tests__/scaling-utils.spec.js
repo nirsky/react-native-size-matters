@@ -1,5 +1,5 @@
 jest.mock('react-native');
-import { scale, verticalScale, moderateScale, moderateVerticalScale } from '..';
+import { scale, verticalScale, moderateScale, moderateVerticalScale } from '../src';
 
 describe('scaling-utils', () => {
     test('scale returns the expected result based on mocked Dimensions', () => {

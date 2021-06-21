@@ -1,4 +1,4 @@
-import deepMap from '../lib/deep-map';
+import deepMap from '../src/deep-map';
 
 const add3 = x => x + 3;
 
