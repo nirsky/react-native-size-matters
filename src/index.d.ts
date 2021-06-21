@@ -1,6 +1,6 @@
 import * as RN from "react-native";
 
-declare module "react-native-size-matters" {
+declare module "nirsky-testing-s-matters" {
 
     interface StringifiedStyles {
         fontSize?: string | number;
@@ -34,6 +34,8 @@ declare module "react-native-size-matters" {
     export function vs(size: number): number;
     export function ms(size: number, factor?: number): number;
     export function mvs(size: number, factor?: number): number;
+    export function setBaseWidth(width: number): void;
+    export function setBaseHeight(height: number): void;
 
     type NamedStyles<T> = { [P in keyof T]: RN.ViewStyle | RN.TextStyle | RN.ImageStyle | StringifiedStyles };
 

@@ -4,8 +4,16 @@ const { width, height } = Dimensions.get('window');
 const [shortDimension, longDimension] = width < height ? [width, height] : [height, width];
 
 //Default guideline sizes are based on standard ~5" screen mobile device
-const guidelineBaseWidth = 350;
-const guidelineBaseHeight = 680;
+let guidelineBaseWidth = 350;
+let guidelineBaseHeight = 680;
+
+export const setSizeMattersBaseWidth = baseWidth => {
+    guidelineBaseWidth = baseWidth;
+};
+
+export const setSizeMattersBaseHeight = baseHeight => {
+    guidelineBaseHeight = baseHeight;
+};
 
 export const scale = size => shortDimension / guidelineBaseWidth * size;
 export const verticalScale = size => longDimension / guidelineBaseHeight * size;

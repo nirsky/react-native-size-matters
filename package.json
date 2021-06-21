@@ -1,12 +1,18 @@
 {
-  "name": "react-native-size-matters",
-  "version": "0.4.0",
+  "name": "nirsky-testing-s-matters",
+  "version": "0.4.4",
   "description": "A React-Native utility belt for scaling the size your apps UI across different sized devices",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "npx babel lib --out-dir dist && copyfiles -f lib/index.d.ts dist/",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nirsky/react-native-size-matters.git"
@@ -26,9 +32,11 @@
     "react-native": "*"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.5",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "babel-jest": "^26.6.3",
+    "copyfiles": "^2.4.1",
     "jest": "^26.6.3"
   }
 }
