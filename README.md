@@ -1,9 +1,9 @@
 # 📐 react-native-size-matters
-[![NPM version](https://img.shields.io/npm/v/react-native-size-matters.svg)](https://www.npmjs.com/package/react-native-size-matters) 
+[![NPM version](https://img.shields.io/npm/v/react-native-size-matters.svg?color=steelblue)](https://www.npmjs.com/package/react-native-size-matters) 
 [![Actions Status: test](https://github.com/nirsky/react-native-size-matters/workflows/Test/badge.svg)](https://github.com/nirsky/react-native-size-matters/actions?query=workflow%3ATest)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![TypeScript](https://badgen.net/npm/types/env-var)](http://www.typescriptlang.org/)
-
+[![TypeScript](https://badgen.net/npm/types/env-var)](https://github.com/nirsky/react-native-size-matters/blob/master/index.d.ts)
+![npm](https://img.shields.io/npm/dw/react-native-size-matters)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/react-native-size-matters)](https://bundlephobia.com/package/react-native-size-matters@latest)
 
 A lightweight, zero-dependencies, React-Native utility belt for scaling the size of your apps UI across different sized devices.
 
