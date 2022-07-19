@@ -23,9 +23,9 @@ To do this, I created a small example app, and after every scaling method I'll a
 So this is the component:
 ```javascript
 import React from 'react';
-import { View, Text, Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, useWindowDimensions, StyleSheet, TouchableOpacity } from 'react-native';
 import { loremIpsum } from './contants';
-const { width, height } = Dimensions.get('window');
+const { width, height } = useWindowDimensions();
 
 const AwesomeComponent = () =>
     <View style={styles.container}>
@@ -243,8 +243,8 @@ But as I said, I'm lazy and I don't want to write everything 2 or more times, wh
  Here at Soluto, we wrote these 3 simple functions that make our scaling so much easier:   
  
   ```javascript
-import { Dimensions } from 'react-native';
-const { width, height } = Dimensions.get('window');
+import { useWindowDimensions } from 'react-native';
+const { width, height } = useWindowDimensions();
 
 //Guideline sizes are based on standard ~5" screen mobile device
 const guidelineBaseWidth = 350;

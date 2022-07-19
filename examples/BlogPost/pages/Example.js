@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, useWindowDimensions, StyleSheet, TouchableOpacity } from 'react-native';
 import { loremIpsum } from './contants';
-const { width, height } = Dimensions.get('window');
+const { width, height } = useWindowDimensions();
 
 const Example = () =>
     <View style={styles.container}>
