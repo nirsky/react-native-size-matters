@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/nirsky/react-native-size-matters#readme",
   "peerDependencies": {
+    "react-native-config": "*",
     "react-native": "*"
   },
   "devDependencies": {
