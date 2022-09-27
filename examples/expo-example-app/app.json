@@ -2,7 +2,6 @@
   "expo": {
     "name": "Size Matters Example",
     "slug": "size-matters",
-    "sdkVersion": "22.0.0",
     "privacy": "public"
   }
 }

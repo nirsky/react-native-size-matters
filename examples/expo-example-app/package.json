@@ -3,25 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "jest-expo": "^22.0.0",
-    "react-native-scripts": "1.7.0",
-    "react-test-renderer": "16.0.0-beta.5"
+    "@babel/core": "^7.12.9",
+    "jest-expo": "^46.0.0"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^22.0.2",
-    "react": "16.0.0-beta.5",
-    "react-native": "^0.49.5",
+    "expo": "^46.0.0",
+    "react": "18.0.0",
+    "react-native": "0.69.5",
     "react-native-size-matters": "^0.1.0",
     "react-navigation": "^1.0.0-beta.21"
   }
