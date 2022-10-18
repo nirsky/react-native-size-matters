@@ -18,7 +18,7 @@
   "dependencies": {
     "expo": "^46.0.0",
     "react": "18.0.0",
-    "react-native": "0.69.5",
+    "react-native": "0.69.6",
     "react-native-size-matters": "^0.4.0",
     "react-navigation": "^1.0.0-beta.21"
   }
