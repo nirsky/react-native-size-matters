@@ -1,28 +1,23 @@
-import React from 'react';
-import {StackNavigator} from 'react-navigation';
-import HomeScreen from './components/Home';
-import FeedPage from './components/Feed';
-import ChatPage from './components/Chat';
+import React from "react";
+import HomeScreen from "./components/Home";
+import FeedPage from "./components/Feed";
+import ChatPage from "./components/Chat";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { StatusBar } from "expo-status-bar";
 
-export default StackNavigator({
-    Home: {
-        screen: HomeScreen,
-        navigationOptions: {
-            title: 'Home'
-        }
-    },
-    Chat: {
-        screen: ChatPage,
-        navigationOptions: {
-            title: 'Chat'
-        }
-    },
-    Feed: {
-        screen: FeedPage,
-        navigationOptions: {
-            title: 'Feed'
-        }
-    }
-}, {
-    initialRouteName: 'Home'
-});
+const NativeStack = createNativeStackNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <StatusBar style="dark" />
+
+      <NativeStack.Navigator initialRouteName="Home">
+        <NativeStack.Screen name="Home" component={HomeScreen} />
+        <NativeStack.Screen name="Chat" component={ChatPage} />
+        <NativeStack.Screen name="Feed" component={FeedPage} />
+      </NativeStack.Navigator>
+    </NavigationContainer>
+  );
+}
