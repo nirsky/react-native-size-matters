@@ -1,8 +1,8 @@
-import * as RN from "react-native";
+import { FlexStyle, ViewStyle, TextStyle, ImageStyle} from 'react-native/Libraries/StyleSheet/StyleSheetTypes';
 
 declare module "react-native-size-matters" {
 
-    interface StringifiedStyles {
+    interface StringifiedStyles extends FlexStyle{
         fontSize?: string | number;
         letterSpacing?: string | number;
         lineHeight?: string | number;
@@ -11,19 +11,15 @@ declare module "react-native-size-matters" {
         borderBottomRightRadius?: string | number;
         borderTopLeftRadius?: string | number;
         borderTopRightRadius?: string | number;
-        borderBottomWidth?: string | number;
-        borderTopWidth?: string | number;
-        borderRightWidth?: string | number;
-        borderLeftWidth?: string | number;
         borderRadius?: string | number;
         shadowRadius?: string | number;
-        borderWidth?: string | number;
         aspectRatio?: string | number;
         rotation?: string | number;
         scaleX?: string | number;
         scaleY?: string | number;
         translateX?: string | number;
         translateY?: string | number;
+        backgroundColor?: string;
     }
 
     export function scale(size: number): number;
@@ -35,11 +31,15 @@ declare module "react-native-size-matters" {
     export function ms(size: number, factor?: number): number;
     export function mvs(size: number, factor?: number): number;
 
-    type NamedStyles<T> = { [P in keyof T]: RN.ViewStyle | RN.TextStyle | RN.ImageStyle | StringifiedStyles };
 
     export namespace ScaledSheet {
-        export function create<T extends NamedStyles<T> | NamedStyles<any>>(stylesObject: T): {
-            [P in keyof T]: RN.RegisteredStyle<T[P] & Record<Extract<keyof T[P], keyof StringifiedStyles>, number>>
-        };
+        type NamedStyles<T> = {[P in keyof T]: ViewStyle | TextStyle | ImageStyle | StringifiedStyles};
+
+        /**
+         * Creates a StyleSheet style reference from the given object.
+         */
+        export function create<T extends NamedStyles<T> | NamedStyles<any>>(
+            styles: T | NamedStyles<T>,
+        ): T;
     }
 }
