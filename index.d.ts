@@ -43,6 +43,10 @@ declare module "react-native-size-matters" {
         bottom?: string | number;
         width?: string | number;
         height?: string | number;
+        minWidth?: string | number;
+        minHeight?: string | number;
+        maxWidth?: string | number;
+        maxHeight?: string | number;
     }
 
     export function scale(size: number): number;
