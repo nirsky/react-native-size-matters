@@ -1,7 +1,6 @@
 import * as RN from "react-native";
 
 declare module "react-native-size-matters" {
-
     interface StringifiedStyles {
         fontSize?: string | number;
         letterSpacing?: string | number;
@@ -24,6 +23,30 @@ declare module "react-native-size-matters" {
         scaleY?: string | number;
         translateX?: string | number;
         translateY?: string | number;
+        padding?: string | number;
+        paddingLeft?: string | number;
+        paddingRight?: string | number;
+        paddingTop?: string | number;
+        paddingBottom?: string | number;
+        paddingHorizontal?: string | number;
+        paddingVertical?: string | number;
+        margin?: string | number;
+        marginLeft?: string | number;
+        marginRight?: string | number;
+        marginTop?: string | number;
+        marginBottom?: string | number;
+        marginHorizontal?: string | number;
+        marginVertical?: string | number;
+        top?: string | number;
+        left?: string | number;
+        right?: string | number;
+        bottom?: string | number;
+        width?: string | number;
+        height?: string | number;
+        minWidth?: string | number;
+        minHeight?: string | number;
+        maxWidth?: string | number;
+        maxHeight?: string | number;
     }
 
     export function scale(size: number): number;
@@ -35,7 +58,10 @@ declare module "react-native-size-matters" {
     export function ms(size: number, factor?: number): number;
     export function mvs(size: number, factor?: number): number;
 
-    type NamedStyles<T> = { [P in keyof T]: RN.ViewStyle | RN.TextStyle | RN.ImageStyle | StringifiedStyles };
+    type ViewStyle = Omit<RN.ViewStyle, keyof StringifiedStyles> & StringifiedStyles;
+    type TextStyle = Omit<RN.TextStyle, keyof StringifiedStyles> & StringifiedStyles;
+    type ImageStyle = Omit<RN.ImageStyle, keyof StringifiedStyles> & StringifiedStyles;
+    type NamedStyles<T> = { [P in keyof T]: ViewStyle | TextStyle | ImageStyle };
 
     export namespace ScaledSheet {
         export function create<T extends NamedStyles<T> | NamedStyles<any>>(stylesObject: T): {
