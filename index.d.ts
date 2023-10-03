@@ -10,10 +10,10 @@ declare module 'react-native-size-matters' {
     export function ms(size: number, factor?: number): number;
     export function mvs(size: number, factor?: number): number;
 
-    type Scale = `${number}@s`;
-    type VerticalScale = `${number}@vs`;
-    type ModerateScale = `${number}@ms${number | ''}`;
-    type ModerateVerticalScale = `${number}@mvs${number | ''}`;
+    type Scale = `${number}@s${'r' | ''}`;
+    type VerticalScale = `${number}@vs${'r' | ''}`;
+    type ModerateScale = `${number}@ms${number | ''}${'r' | ''}`;
+    type ModerateVerticalScale = `${number}@mvs${number | ''}${'r' | ''}`;
     type Size = Scale | VerticalScale | ModerateScale | ModerateVerticalScale;
     type WithSize<T> = { [P in keyof T]: number extends T[P] ? Size | T[P] : T[P] };
     type ViewStyle = WithSize<RN.ViewStyle>;
